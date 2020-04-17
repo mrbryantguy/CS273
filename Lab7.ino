@@ -1,6 +1,6 @@
 extern "C" {
   void initAD();
-  byte readAD(int pin);
+  byte readAD(byte pin);
 }
 
 void setup() {
