@@ -61,7 +61,7 @@ ISR(PCINT0_vect)
      // print out "Safe Distance"  or "Too close" based on your science
      totduration = micros() - start_time;
 
-     if((totduration / 147.3) > 5 )
+     if((((totduration / 29 ) / 2)* 0.393701) > 5)
       Serial.println("Safe Distance");
      else
       Serial.println("Too close");
